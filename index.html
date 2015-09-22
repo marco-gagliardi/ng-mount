@@ -12,7 +12,7 @@
 
 <h1>Welcome to ngMount Demo Page</h1>
 <p>In this demo we are using <a href="http://owlgraphic.com/owlcarousel/">Owl Carousel</a> as a jQuery plugin example.</p>
-<h3>How you would use the plugin in a non-Angular application</h3>
+<h3>How you were used to use a plugin in a non-Angular application</h3>
 Your HTML:
 <pre>
     &lt;div id="owl-example" class="owl-carousel">
@@ -35,14 +35,14 @@ $(document).ready(function() {
 });
 </pre>
 
-<h3>How you use the plugin in your Angular application</h3>
+<h3>How you can now use a plugin in your Angular application thanks to ngMount</h3>
 Your HTML:
 <pre>
     &lt;div ng-controller="myCtrl" class="owl-carousel" ng-mount="&#123;plugin: 'owlCarousel', params:&#123;items:4&#125;&#125;">
         &lt;div ng-repeat="c in contents"> &#123;&#123;c&#125;&#125; &lt;/div&gt;
     &lt;/div&gt;
 </pre>
-.. and in your js:
+.. and in your js (if needed):
 <pre>
     app.controller("myCtrl", function($scope) {
         $scope.contents = ["Content 1", "Content 2", "Content 3", "Content 4", "Content 5", "Content 6"]
