@@ -1,6 +1,8 @@
 # ng-mount
 ngMount is an AngularJS module to easily integrate any javascript plugin that requires initialization on a DOM node 
-in your AngularJS application (i.e. syncing the init function to AngularJS digest cycle)
+in your AngularJS application. It allows you to forget about how to sync the typical initialization function 
+ (e.g. jQuery's $(document).ready() ) to Angular's digest cycle and take full advantage of MVC power, such as dynamic contents from controllers.
+take advantage of 
 
 ## Installation
 
