@@ -25,8 +25,12 @@ Provide the directive an object as a value, with the following two params:
 
 Example:
 ```html
- <div ng-controller="myCtrl" class="plugin-class" ng-mount="{plugin: 'initPluginFunc', params:{width:400}}">
-         <div ng-repeat="c in contents"> {{c}} </div>
-     </div>
+    <div ng-controller="myCtrl" class="plugin-class" ng-mount="{plugin: 'initPluginFunc', params:{width:400}}">
+        <div ng-repeat="c in contents"> {{c}} </div>
+    </div>
 ```
 ...done!
+
+## Demo
+
+You can find a demo [here!](http://marco-gagliardi.github.io/ng-mount/)
