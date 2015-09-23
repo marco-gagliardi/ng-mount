@@ -49,9 +49,9 @@ As you might have experienced, this code breaks if you want to populate your `di
 With ng-mount you can easily do it like this:
 
 ```html
-    <div ng-controller="myCtrl" class="plugin-class" ng-mount="{plugin: 'initPluginFunc', params:{width:400}}">
-        <div ng-repeat="c in contents"> {{c}} </div>
-    </div>
+<div class="plugin-class" ng-mount="{plugin: 'initPluginFunc', params:{width:400}}">
+    <div ng-repeat="c in contents"> {{c}} </div>
+</div>
 ```
 ...done!
 
