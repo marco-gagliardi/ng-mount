@@ -24,6 +24,30 @@ Provide the directive an object as a value, with the following two params:
 * params [object] the params or options to pass along the init function
 
 Example:
+
+Let's say you want to use a plugin which requires to call the `initPluginFunc()` function on an element to be initialized. 
+With jQuery you would typically do something like this:
+
+```html
+    <div class="plugin-class" id="myElement">
+         <div> foo </div>
+         <div> foo </div>
+         <div> foo </div>
+         <div> foo </div>
+     </div>
+```
+and then..
+```javascript
+    $(document).ready(function() {
+        $("#myElement").initPluginFunc({
+            width: 400
+        });
+    });
+```
+
+As you might have experienced, this code breaks if you want to populate your `div` dynamically with AngularJS e.g. by an `ng-repeat`.
+With ng-mount you can easily do it like this:
+
 ```html
     <div ng-controller="myCtrl" class="plugin-class" ng-mount="{plugin: 'initPluginFunc', params:{width:400}}">
         <div ng-repeat="c in contents"> {{c}} </div>
